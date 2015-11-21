@@ -1,0 +1,22 @@
+group 'zhou.dome'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'com.jfinal:jetty-server:8.1.8'
+    compile 'com.jfinal:jfinal:2.0'
+    compile 'c3p0:c3p0:0.9.1.2'
+    compile 'mysql:mysql-connector-java:5.1.18'
+
+}
